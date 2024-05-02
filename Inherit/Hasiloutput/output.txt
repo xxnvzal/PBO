@@ -1,0 +1,16 @@
+- Inheritance (Contoh 1) :
+Nama: null
+Alamat: null
+null
+- Overriding (Contoh 2) :
+NIM: A11.2000.00001
+- Super (Contoh 3) :
+1. Sebelum
+    Nama: null
+    Alamat: null
+    NIM: A11.2000.00001
+
+2. Sesudah
+    NIM: A11.2000.00001
+    Nama: null
+    Alamat: null
