@@ -20,7 +20,7 @@ public class Student extends Person{
 			System.out.println("Masukkan NIM:");
 			this.nim = x.next();
 
-            System.out.println("Hobi:");
+            		System.out.println("Hobi:");
 			this.hobi = x.next();
 
 			System.out.println("SPP:");
