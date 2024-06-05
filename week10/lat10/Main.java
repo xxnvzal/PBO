@@ -8,7 +8,7 @@ public class Main {
 
         while (running) {
             System.out.println("======Pilih Bangun Datar=====");
-            System.out.println("1. Persegi \n2. Lingkaran \n3. Segitiga \n4. Exit");
+            System.out.println("1. Persegi \n2. Lingkaran \n3. Segitiga \n4. PersegiPanjang \n5. Exit");
             System.out.print("Masukkan Pilihan : ");
             int pilihan = scanner.nextInt();
 
@@ -43,8 +43,19 @@ public class Main {
                     segitiga.keliling();
                     System.out.println("=============================");
                     break;
-
+                
                 case 4:
+                    System.out.print("Masukkan Panjang: ");
+                    int panjang = scanner.nextInt();
+                    System.out.print("Masukkan Lebar: ");
+                    int lebar = scanner.nextInt();
+                    PersegiPanjang persegiPjg = new PersegiPanjang(panjang,lebar);
+                    persegiPjg.luas();
+                    persegiPjg.keliling();
+                    System.out.println("=============================");
+                    break;
+
+                case 5:
                     running = false;
                     System.out.println("Terima kasih telah menggunakan program ini.");
                     break;
