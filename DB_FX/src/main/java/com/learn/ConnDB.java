@@ -19,9 +19,9 @@ public class ConnDB {
 
     public static void main(String[] args) {
         try {
-            // Register JDBC driver
+            
             Class.forName(JDBC_DRIVER);
-            // Open a connection
+            
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
         } catch (Exception e) {
             e.printStackTrace();
@@ -38,7 +38,7 @@ public class ConnDB {
             System.out.println("5. Keluar");
             System.out.print("Pilih opsi: ");
             int pilihan = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (pilihan) {
                 case 1:
@@ -91,7 +91,7 @@ public class ConnDB {
     private static void editBuku(Scanner scanner) {
         System.out.print("Masukkan ID buku yang akan diedit: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
         System.out.print("Masukkan judul buku baru: ");
         String judul = scanner.nextLine();
         System.out.print("Masukkan tahun terbit baru: ");
